@@ -57,3 +57,9 @@ h1,h2,h3,h4,h5{font-family:Cinzel,serif;color:#e3c887;font-weight:500}p{color:#c
 
 /* Enemy stat block styling */
 .enemy-stats{margin-top:1.5rem;padding:1rem;border:1px solid rgba(184,145,74,.35);border-radius:8px;background:rgba(20,20,20,.55);overflow-x:auto}.enemy-stats h3{color:#c5a45b;margin:0 0 .75rem}.enemy-stats h4{color:#c5a45b;margin:1.1rem 0 .5rem}.enemy-stats table{width:100%;border-collapse:collapse;margin:.75rem 0;font-size:.92rem}.enemy-stats th,.enemy-stats td{padding:.5rem .6rem;border:1px solid rgba(184,145,74,.22);text-align:left;white-space:nowrap}.enemy-stats th{color:#d0b16d;background:rgba(184,145,74,.08)}.enemy-stats p,.enemy-stats ul{margin:.5rem 0}.enemy-stats ul{padding-left:1.25rem}
+
+/* Unified campaign sidebar layout */
+.campaign-page{margin-left:250px;min-height:100vh}
+.campaign-page .hero,.campaign-page main,.campaign-page footer{margin-left:0}
+.campaign-page .navbar{display:none!important}
+@media(max-width:900px){.campaign-page{margin-left:0}.campaign-page .campaign-sidebar{position:sticky;top:0;z-index:1030}}
