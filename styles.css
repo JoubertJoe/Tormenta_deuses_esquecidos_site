@@ -72,3 +72,11 @@ h1,h2,h3,h4,h5{font-family:Cinzel,serif;color:#e3c887;font-weight:500}p{color:#c
 .record-gallery-grid img{display:block;width:100%;height:auto;max-height:460px;object-fit:contain;background:#090b0c}
 .record-gallery-grid figcaption{padding:.6rem .75rem;font-size:.85rem;color:var(--gold,#c7a05a)}
 @media(max-width:650px){.record-gallery-grid{grid-template-columns:1fr}}
+
+/* Character sheets: concise mechanical supplement on individual adventurer pages */
+.character-sheet{margin-top:2rem;padding:1.25rem;border:1px solid var(--line,#38352e);border-radius:10px;background:rgba(255,255,255,.025)}
+.character-sheet h3,.character-sheet h4{color:var(--gold,#c7a05c);margin:.6rem 0}
+.character-sheet ul{padding-left:1.2rem;line-height:1.75}
+.character-sheet a{color:var(--gold,#c7a05c);text-decoration:underline;text-underline-offset:2px}
+.character-sheet a:hover{color:#f0d28a}
+.character-sheet small{opacity:.7}
