@@ -9,25 +9,8 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container"><a class="navbar-brand" href="index.html">☾ DEUSES ESQUECIDOS</a><button
-                class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span
-                    class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cronica.html">Crônica</a></li>
-                    <li class="nav-item"><a class="nav-link" href="aventureiros.html">Aventureiros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="personagens.html">NPCs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares</a></li>
-                    <li class="nav-item"><a class="nav-link" href="descobertas.html">Descobertas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="inimigos.html">Inimigos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="itens.html">Itens</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<body class="campaign-page">
+    <aside class="campaign-sidebar"><a class="brand-mark" href="index.html"><span class="brand-moon">☾</span><span>DEUSES<br><b>ESQUECIDOS</b></span></a><div class="sidebar-caption">CADERNO DA CAMPANHA</div><nav class="campaign-nav"><a class="side-link" href="index.html"><i>⌂</i>Visão geral</a><a class="side-link" href="cronica.html"><i>◷</i>Crônica</a><a class="side-link" href="aventureiros.html"><i>♙</i>Aventureiros</a><a class="side-link" href="personagens.html"><i>♧</i>NPCs</a><a class="side-link" href="lugares.html"><i>⌖</i>Lugares</a><a class="side-link" href="descobertas.html"><i>✧</i>Descobertas</a><a class="side-link" href="inimigos.html"><i>⚔</i>Bestiário</a><a class="side-link" href="itens.html"><i>◇</i>Itens</a></nav><div class="sidebar-bottom"><span class="status-dot"></span> A campanha continua<small>NORBA · REGISTROS DO GRUPO</small></div></aside>
     <header class="hero">
         <div class="container hero-inner">
             <div class="eyebrow">Tormenta 20 · Diário dos aventureiros</div>
@@ -98,6 +81,6 @@
             que o grupo descobriu.</div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="records.js"></script><script src="link-records.js"></script>
-</body>
+<script>document.querySelector('.campaign-nav a[href="'+location.pathname.split('/').pop()+'"]')?.classList.add('active');</script></body>
 
 </html>
