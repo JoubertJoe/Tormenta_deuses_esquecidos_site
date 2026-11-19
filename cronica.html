@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Crônica da jornada | Deuses Esquecidos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #101112;
+            --panel: #191b1d;
+            --gold: #c4a66a;
+            --text: #e6e0d5;
+            --muted: #aaa397;
+            --line: #343638
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: Georgia, serif;
+            background-image: radial-gradient(ellipse at 15% 0%, #292318, transparent 42%), radial-gradient(ellipse at 90% 30%, #20242a, transparent 38%)
+        }
+
+        .navbar {
+            background: #0c0d0eee;
+            border-bottom: 1px solid #55452c
+        }
+
+        .navbar-brand {
+            letter-spacing: .12em;
+            color: var(--gold) !important
+        }
+
+        .nav-link {
+            color: #c8c1b5 !important
+        }
+
+        .nav-link:hover {
+            color: var(--gold) !important
+        }
+
+        .hero {
+            min-height: 38vh;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid var(--line);
+            background: linear-gradient(90deg, #101112 0%, #101112e8 58%, #10111270), radial-gradient(ellipse at 75% 50%, #65532b35, transparent 60%)
+        }
+
+        .hero-inner {
+            padding: 3.5rem 0
+        }
+
+        .eyebrow {
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: .22em;
+            font: .75rem system-ui
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 7vw, 4.5rem);
+            line-height: .96;
+            color: #eee7da
+        }
+
+        h2,
+        h3,
+        h4,
+        h5 {
+            color: var(--gold)
+        }
+
+        .hero p {
+            max-width: 700px;
+            color: #c3b9a6;
+            font-size: 1.1rem
+        }
+
+        .section {
+            padding: 3rem 0
+        }
+
+        .section-title {
+            border-bottom: 1px solid var(--line);
+            padding-bottom: .8rem;
+            margin-bottom: 1.4rem;
+            color: var(--gold);
+            font-size: 1.8rem
+        }
+
+        .panel,
+        .card-dark {
+            background: linear-gradient(145deg, var(--panel), #151718);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 1.3rem;
+            height: 100%
+        }
+
+        .card-dark:hover {
+            border-color: #74603c
+        }
+
+        .muted {
+            color: var(--muted)
+        }
+
+        .badge-soft {
+            background: #3b3221;
+            color: #d6bd83;
+            border: 1px solid #62502f
+        }
+
+        .quote {
+            border-left: 3px solid #8d7545;
+            padding: .8rem 1rem;
+            color: #c9beaa;
+            background: #211f1a;
+            font-style: italic;
+            border-radius: 0 8px 8px 0
+        }
+
+        .accordion {
+            --bs-accordion-bg: var(--panel);
+            --bs-accordion-color: var(--text);
+            --bs-accordion-border-color: var(--line);
+            --bs-accordion-btn-color: var(--text);
+            --bs-accordion-btn-bg: #202325;
+            --bs-accordion-btn-focus-box-shadow: none;
+            --bs-accordion-active-color: var(--gold);
+            --bs-accordion-active-bg: #2a261e
+        }
+
+        .accordion-button:after {
+            filter: invert(.7)
+        }
+
+        .accordion-body {
+            color: #c7c0b5
+        }
+
+        .item-chip {
+            display: inline-block;
+            border: 1px solid var(--line);
+            background: #1a1c1d;
+            border-radius: 50px;
+            padding: .35rem .75rem;
+            margin: .2rem;
+            color: #d2c9b8;
+            font-size: .9rem
+        }
+
+        footer {
+            border-top: 1px solid var(--line);
+            color: var(--muted)
+        }
+
+        .enemy-card {
+            border-left: 3px solid #70552e;
+            padding: 1rem 1.2rem;
+            background: #191b1d;
+            border-radius: 6px;
+            margin-bottom: 1rem
+        }
+
+        .enemy-card p {
+            color: #bbb4a8
+        }
+
+        .page-intro {
+            color: #c3b9a6;
+            max-width: 800px
+        }
+
+        @media(max-width:767px) {
+            .section {
+                padding: 2.5rem 0
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container"><a class="navbar-brand" href="index.html">☾ DEUSES ESQUECIDOS</a><button
+                class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cronica.html">Crônica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aventureiros.html">Aventureiros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="personagens.html">NPCs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares</a></li>
+                    <li class="nav-item"><a class="nav-link" href="descobertas.html">Descobertas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="inimigos.html">Inimigos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="itens.html">Itens</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="hero">
+        <div class="container hero-inner">
+            <div class="eyebrow">Tormenta 20 · Diário dos aventureiros</div>
+            <h1>Crônica da jornada</h1>
+            <p>Relembre os acontecimentos em Norba, do primeiro encontro à descoberta dos túneis.</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="section-title">Crônica da jornada <small class="eyebrow ms-2">PRÓLOGO — AVENTURA 03</small>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="panel">
+                        <div class="eyebrow">O começo em Norba</div>
+                        <h3>Três destinos, uma cidade</h3>
+                        <p>Grace Inagawa chegou a Norba buscando pistas sobre o massacre de seu clã e o paradeiro de
+                            seus inimigos. Gahliel procurava um lugar para descansar antes de seguir viagem, enquanto
+                            Vaelith tentava compreender pistas sobre sua própria origem.</p>
+                        <p>Norba, porém, fechou seus portões. O movimento incomum, os mercenários, os rumores e uma
+                            cidade que parecia ignorar a passagem da noite fizeram os viajantes perceberem que algo
+                            estava errado. Os caminhos dos três se cruzaram no <strong>Pônei Rústico</strong>, a taverna
+                            de Nancy, a Cascuda.</p>
+                        <p>Uma missão aparentemente simples — recuperar uma chave roubada — conduziu o grupo a um
+                            depósito abandonado e ao esconderijo de fanáticos lunares. Símbolos estranhos, documentos
+                            secretos e a profanação de um altar revelaram que havia muito mais acontecendo nas sombras
+                            de Norba.</p>
+                        <div class="quote">“Isso não é um culto. É uma guerra.” — Nancy, a Cascuda</div>
+                        <p class="mt-3 mb-0">Ao devolver a chave, os aventureiros receberam suprimentos e uma escolha:
+                            investigar caminhos da cidade ou descer aos túneis. Decidiram seguir o rastro de Lyra, a
+                            jovem desaparecida que Vaelith conhecia.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="panel">
+                        <div class="eyebrow">Resumo rápido</div>
+                        <p><strong>Grupo reunido:</strong> Grace · Gahliel · Vaelith</p>
+                        <hr />
+                        <p><strong>Primeira missão:</strong> recuperar a chave de Nancy</p>
+                        <hr />
+                        <p class="mb-0"><strong>Último acontecimento:</strong> encontro com Barnabé nos esgotos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="eyebrow mt-4 mb-2">Linha do tempo</div>
+            <div class="timeline">
+                <div class="timeline-item"><span class="badge badge-soft">Prólogo</span>
+                    <h5 class="mt-2">Chegada à cidade</h5>
+                    <p class="muted">Grace, Gahliel e Vaelith chegam por caminhos diferentes. Norba fecha seus portões e
+                        eles se encontram na taverna de Nancy.</p>
+                </div>
+                <div class="timeline-item"><span class="badge badge-soft">Aventura 01</span>
+                    <h5 class="mt-2">As Engrenagens sob o Luar</h5>
+                    <p class="muted">Recuperam a chave roubada no esconderijo dos fanáticos lunares. Documentos
+                        encontrados apontam conspirações, símbolos e uma situação perigosa em Norba.</p>
+                </div>
+                <div class="timeline-item"><span class="badge badge-soft">Aventura 02</span>
+                    <h5 class="mt-2">O Sangue no Gelo e os Segredos da Terra</h5>
+                    <p class="muted">Descem pelos túneis, encontram ruínas, salas de experimentos e criaturas
+                        congeladas. Uma adaga quebrada e sua bainha mística ajudam a abrir caminho pelo gelo.</p>
+                </div>
+                <div class="timeline-item"><span class="badge badge-soft">Aventura 03</span>
+                    <h5 class="mt-2">O Sangue do Mar e o Frio de Pedra</h5>
+                    <p class="muted">Enfrentam o Gólem de Gelo e caranguejos, libertam a passagem e conhecem Barnabé, o
+                        Sanguessuga, nos esgotos de Norba.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="section-title">Relatos completos das aventuras <small class="eyebrow ms-2">REGISTRO DE
+                    SESSÃO</small></div>
+            <div class="accordion" id="sessionLog">
+                <div class="accordion-item">
+                    <h2 class="accordion-header"><button aria-expanded="true" class="accordion-button"
+                            data-bs-target="#session0" data-bs-toggle="collapse" type="button">Prólogo — Chegada a
+                            Norba</button></h2>
+                    <div class="accordion-collapse collapse show" data-bs-parent="#sessionLog" id="session0">
+                        <div class="accordion-body">
+                            <h5 class="gold">Grace Inagawa</h5>
+                            <p>Chegou à cidade à noite, investigando o massacre de seu clã e procurando pistas sobre o
+                                clã rival. Notou o movimento intenso no Banco Balde D’Ouro e conversou com um
+                                mercenário, que a direcionou ao mercado. Tharlán não deu respostas, mas indicou o Pônei
+                                Rústico. Lá, Grace tentou obter informações com Alandor e teve um encontro frustrado com
+                                Rotho. Ao tentar conjurar magia, percebeu que a taverna era uma zona de antimagia.</p>
+                            <h5 class="gold">Gahliel</h5>
+                            <p>Chegou a Norba como parada de descanso, pouco antes do fechamento dos portões. Explorou o
+                                mercado, visitou o Pônei Rústico e o Banco Balde D’Ouro, onde conversou com Dicfos Mão
+                                Dourada. Ao sair do banco, encontrou Rotho, o bardo goblin, que se apresentou e indicou
+                                que poderia ajudar a obter informações de Nancy.</p>
+                            <h5 class="gold">Vaelith</h5>
+                            <p>Entrou na cidade junto de um carregamento de nozes e buscou informações sobre sua raça e
+                                sua pele diferente. No templo, disseram que a deusa a acolheria. Na taverna, Nancy a
+                                direcionou a Tharlán, que comentou sobre uma ajudante desaparecida. Vaelith aceitou
+                                procurar informações e foi convidada a aguardar com outros aventureiros.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-target="#session1"
+                            data-bs-toggle="collapse" type="button">Aventura 01 — As Engrenagens sob o Luar</button>
+                    </h2>
+                    <div class="accordion-collapse collapse" data-bs-parent="#sessionLog" id="session1">
+                        <div class="accordion-body">
+                            <p>Nancy reuniu os três e pediu que recuperassem uma chave roubada. A missão levou o grupo a
+                                um depósito abandonado, onde Vaelith avançou primeiro e Grace liderou a investigação,
+                                obtendo um resultado 18 e encontrando um símbolo religioso que não conseguiu
+                                identificar. Vaelith sentiu que o túnel tinha uma ligação com a Lua, mas não com
+                                Tenebra, e identificou o símbolo. Grace percebeu semelhança com a marca de seu clã
+                                rival; Vaelith soube que Lyra pesquisava povos lunares antigos; Gahliel notou que o
+                                Banco Balde D’Ouro financiava grande parte da segurança de Norba.</p>
+                            <p>Grace tentou arrombar a porta, sem sucesso. Gahliel lembrou da chave entregue por Nancy,
+                                que abriu a passagem.</p>
+                            <p>O esconderijo era uma sala de aproximadamente 15 por 15 metros, com caixas, correntes
+                                penduradas, um símbolo de Asgher riscado, velas negras e uma porta ao fundo. O líder dos
+                                fanáticos tentou provocar os aventureiros e fez comentários sobre o Sol imóvel, a
+                                Suraggel escolhida e o passado de Grace. Vaelith tentou enganá-los, mas a conversa não
+                                rendeu muito. Durante o combate, o ritual alterou as sombras e a iluminação. Grace
+                                imobilizou um cultista com uma acrobacia, mas sua adaga se quebrou; Gahliel aproveitou
+                                para examinar e memorizar o símbolo dos inimigos. O grupo derrotou os fanáticos e
+                                recuperou documentos e um diário.</p>
+                            <p>Grace leu memorandos; Gahliel, documentos estratégicos e listas; Vaelith, o diário de uma
+                                investigadora. Entre as descobertas estavam referências a uma cidade sem noite,
+                                suspeitos locais, uma linhagem desaparecida, a letra “K”, sonhos compartilhados e a
+                                expressão “Filha da Lua”. O diário relatava que Norba não via uma noite verdadeira havia
+                                anos e descrevia passagens secretas e dúvidas sobre uma porta. Ao retornar, Nancy
+                                reconheceu a marca e disse que aquilo era uma guerra, não apenas um culto. Ela pegou um
+                                grande machado, colocou um mapa sobre a mesa e afirmou que o problema agora também era
+                                deles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-target="#session2"
+                            data-bs-toggle="collapse" type="button">Aventura 02 — O Sangue no Gelo e os Segredos da
+                            Terra</button></h2>
+                    <div class="accordion-collapse collapse" data-bs-parent="#sessionLog" id="session2">
+                        <div class="accordion-body">
+                            <p>Nancy pediu que o grupo descansasse, comesse e bebesse, prometendo pagar 50 tibares por
+                                aventureiro e entregar informações pela manhã. Após conversar sobre os documentos e
+                                entregar o material recuperado, receberam três frascos de Fogo Alquímico e um Kit de
+                                Sobrevivência nos Túneis (quatro tochas de longa duração, rações e uma corda de 15
+                                metros). Nancy não conhecia Dr. Emanuel. O grupo escolheu seguir o rastro de Lyra,
+                                descendo por passagens subterrâneas antigas.</p>
+                            <p>Nos túneis, encontraram um Gólem de combate desativado e uma sala secreta ao lado, onde
+                                havia uma mesa usada para experimentos alquímicos. Em outra sala, acharam um Anel de
+                                Latão com símbolo dos Deuses Esquecidos, não mágico e estimado em 25 tibares.
+                                Investigaram o Gólem sem conseguir reativá-lo.</p>
+                            <p>Mais adiante, uma água lamacenta e quase congelada cobria o chão. Pequenos cristais se
+                                formavam ao pisar nela. O grupo se dividiu: Vaelith foi ao norte, para uma sala alagada;
+                                Gahliel explorou o corredor sul; Grace ficou no centro. Ao iluminar a sala, Vaelith foi
+                                surpreendida por três filhotes de caranguejo gélido. Grace correu para ajudá-la,
+                                enquanto Gahliel foi atrasado pelo terreno escorregadio. Vaelith derrotou um com magia
+                                elétrica e evitou repetir o ataque por causa da água e do risco aos companheiros. Grace
+                                feriu outro com sua adaga e Vaelith o finalizou à distância; Gahliel esmagou o último
+                                com seu martelo. O grupo recolheu seis fragmentos de gelo cristalino, que valiam 2
+                                tibares de ouro cada para alquimistas locais.</p>
+                            <p>Em uma sala inundada e enevoada, Grace encontrou um cultista congelado. Junto ao corpo
+                                havia uma adaga quebrada com runas e uma bainha mística que, quando encaixada, fazia a
+                                lâmina emitir calor sobrenatural. A arma continuava quebrada, mas passou a causar dano
+                                de fogo. O grupo encontrou paredes de gelo bloqueando outras salas. Após tentativas sem
+                                sucesso, Grace usou a adaga aquecida para derreter a barreira e revelar dois aposentos
+                                que haviam servido para guardar equipamentos. Lá encontraram dois Óleos de Ignição
+                                Alquímicos e uma algibeira com três Pedras de Fogo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-target="#session3"
+                            data-bs-toggle="collapse" type="button">Aventura 03 — O Sangue do Mar e o Frio de
+                            Pedra</button></h2>
+                    <div class="accordion-collapse collapse" data-bs-parent="#sessionLog" id="session3">
+                        <div class="accordion-body">
+                            <p>O grupo encontrou um corpo congelado junto a uma parede de gelo e um documento que
+                                explicava que o Gólem precisava ser desativado para abrir a passagem. Ao entrar na
+                                grande câmara, as saídas congelaram e caranguejos caíram do teto. O Gólem despertou.
+                                Vaelith usou seu familiar coruja para canalizar eletricidade pela água, atingindo as
+                                criaturas e o constructo. O Gólem feriu Vaelith, que recuou e conjurou Armadura Arcana.
+                                Grace e Gahliel protegeram a feiticeira na linha de frente. Grace lutou com a adaga em
+                                chamas, esquivando-se e finalizando um caranguejo. Gahliel usou milagres e defesas
+                                divinas; foi congelado pelo Gólem, mas Grace derreteu o gelo com sua adaga. Gahliel
+                                invocou uma arma mágica que acertou o núcleo do constructo, desativando-o. A criatura
+                                desmoronou e o cristal que era seu núcleo foi identificado por Gahliel. O gelo cedeu e a
+                                passagem abriu.</p>
+                            <p>Seguiram por túneis de esgoto e encontraram anotações mencionando os “Sanguessugas”. Uma
+                                porta trancada e sons vindos de uma estrutura acima impediram o avanço, então
+                                descansaram. Ao acordar, ouviram barulho de taverna na sala que antes estava vazia e
+                                conheceram Barnabé, o Sanguessuga — um Osteon de aparência marinha, líder dos
+                                Sanguessugas. Ele contou que soldados de preto e vermelho passaram carregando uma garota
+                                de asas brilhantes e caixas de metal rúnico, usando um brasão de animal negro em escudo
+                                vermelho, não o símbolo de Azgher.</p>
+                            <p>Barnabé ofereceu o “Óleo de Quilha”, uma bebida quente e desagradável que ajudaria a
+                                tirar o frio dos aventureiros. Explicou que conhece Nancy e ajuda no contrabando de
+                                avelãs por passagens subterrâneas. Também ensinou técnicas sujas e disse que a grade
+                                próxima levava a uma saída de Norba, fora do alcance dos guardas da superfície. Antes de
+                                abrir a passagem, porém, pediu um favor ao grupo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="py-4 mt-5">
+        <div class="container small">Deuses Esquecidos · Compêndio dos aventureiros · Informações reunidas a partir do
+            que o grupo descobriu.</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Descobertas e pistas | Deuses Esquecidos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #101112;
+            --panel: #191b1d;
+            --gold: #c4a66a;
+            --text: #e6e0d5;
+            --muted: #aaa397;
+            --line: #343638
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: Georgia, serif;
+            background-image: radial-gradient(ellipse at 15% 0%, #292318, transparent 42%), radial-gradient(ellipse at 90% 30%, #20242a, transparent 38%)
+        }
+
+        .navbar {
+            background: #0c0d0eee;
+            border-bottom: 1px solid #55452c
+        }
+
+        .navbar-brand {
+            letter-spacing: .12em;
+            color: var(--gold) !important
+        }
+
+        .nav-link {
+            color: #c8c1b5 !important
+        }
+
+        .nav-link:hover {
+            color: var(--gold) !important
+        }
+
+        .hero {
+            min-height: 38vh;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid var(--line);
+            background: linear-gradient(90deg, #101112 0%, #101112e8 58%, #10111270), radial-gradient(ellipse at 75% 50%, #65532b35, transparent 60%)
+        }
+
+        .hero-inner {
+            padding: 3.5rem 0
+        }
+
+        .eyebrow {
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: .22em;
+            font: .75rem system-ui
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 7vw, 4.5rem);
+            line-height: .96;
+            color: #eee7da
+        }
+
+        h2,
+        h3,
+        h4,
+        h5 {
+            color: var(--gold)
+        }
+
+        .hero p {
+            max-width: 700px;
+            color: #c3b9a6;
+            font-size: 1.1rem
+        }
+
+        .section {
+            padding: 3rem 0
+        }
+
+        .section-title {
+            border-bottom: 1px solid var(--line);
+            padding-bottom: .8rem;
+            margin-bottom: 1.4rem;
+            color: var(--gold);
+            font-size: 1.8rem
+        }
+
+        .panel,
+        .card-dark {
+            background: linear-gradient(145deg, var(--panel), #151718);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 1.3rem;
+            height: 100%
+        }
+
+        .card-dark:hover {
+            border-color: #74603c
+        }
+
+        .muted {
+            color: var(--muted)
+        }
+
+        .badge-soft {
+            background: #3b3221;
+            color: #d6bd83;
+            border: 1px solid #62502f
+        }
+
+        .quote {
+            border-left: 3px solid #8d7545;
+            padding: .8rem 1rem;
+            color: #c9beaa;
+            background: #211f1a;
+            font-style: italic;
+            border-radius: 0 8px 8px 0
+        }
+
+        .accordion {
+            --bs-accordion-bg: var(--panel);
+            --bs-accordion-color: var(--text);
+            --bs-accordion-border-color: var(--line);
+            --bs-accordion-btn-color: var(--text);
+            --bs-accordion-btn-bg: #202325;
+            --bs-accordion-btn-focus-box-shadow: none;
+            --bs-accordion-active-color: var(--gold);
+            --bs-accordion-active-bg: #2a261e
+        }
+
+        .accordion-button:after {
+            filter: invert(.7)
+        }
+
+        .accordion-body {
+            color: #c7c0b5
+        }
+
+        .item-chip {
+            display: inline-block;
+            border: 1px solid var(--line);
+            background: #1a1c1d;
+            border-radius: 50px;
+            padding: .35rem .75rem;
+            margin: .2rem;
+            color: #d2c9b8;
+            font-size: .9rem
+        }
+
+        footer {
+            border-top: 1px solid var(--line);
+            color: var(--muted)
+        }
+
+        .enemy-card {
+            border-left: 3px solid #70552e;
+            padding: 1rem 1.2rem;
+            background: #191b1d;
+            border-radius: 6px;
+            margin-bottom: 1rem
+        }
+
+        .enemy-card p {
+            color: #bbb4a8
+        }
+
+        .page-intro {
+            color: #c3b9a6;
+            max-width: 800px
+        }
+
+        @media(max-width:767px) {
+            .section {
+                padding: 2.5rem 0
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container"><a class="navbar-brand" href="index.html">☾ DEUSES ESQUECIDOS</a><button
+                class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cronica.html">Crônica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aventureiros.html">Aventureiros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="personagens.html">NPCs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares</a></li>
+                    <li class="nav-item"><a class="nav-link" href="descobertas.html">Descobertas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="inimigos.html">Inimigos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="itens.html">Itens</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="hero">
+        <div class="container hero-inner">
+            <div class="eyebrow">Tormenta 20 · Diário dos aventureiros</div>
+            <h1>Descobertas e pistas</h1>
+            <p>Registros, símbolos, documentos e fatos que o grupo encontrou.</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="section-title">Descobertas e pistas <small class="eyebrow ms-2">O QUE SABEMOS ATÉ AGORA</small>
+            </div>
+            <div class="accordion" id="findings">
+                <div class="accordion-item">
+                    <h2 class="accordion-header"><button class="accordion-button" data-bs-target="#p1"
+                            data-bs-toggle="collapse">Símbolos lunares e fanáticos</button></h2>
+                    <div class="accordion-collapse collapse show" id="p1">
+                        <div class="accordion-body">No esconderijo, os aventureiros encontraram símbolos ligados a uma
+                            energia lunar que Vaelith sentiu não estar relacionada a Tenebra. Grace percebeu semelhanças
+                            com marcas de seu clã rival. O círculo ritualístico alterou as sombras e enfraqueceu a luz
+                            durante o combate.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-target="#p2"
+                            data-bs-toggle="collapse">Documentos e relatórios recuperados</button></h2>
+                    <div class="accordion-collapse collapse" id="p2">
+                        <div class="accordion-body">Os documentos encontrados mencionavam apoio purista, suspeitos
+                            locais, cooperação de um clã, uma linhagem desaparecida e uma ameaça classificada como
+                            escarlate. Relatos descreviam sonhos compartilhados e uma figura envolta em luar. Os papéis
+                            traziam uma assinatura identificada apenas como “K”.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-target="#p3"
+                            data-bs-toggle="collapse">A cidade sem noite</button></h2>
+                    <div class="accordion-collapse collapse" id="p3">
+                        <div class="accordion-body">Um diário encontrado relatava que Norba não via uma noite verdadeira
+                            há anos, algo que parecia passar despercebido pela população. Os aventureiros descobriram
+                            conexões entre guardas, o banco e os cultistas, além de passagens secretas no subterrâneo.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-target="#p4"
+                            data-bs-toggle="collapse">O gelo sobrenatural</button></h2>
+                    <div class="accordion-collapse collapse" id="p4">
+                        <div class="accordion-body">Nos túneis, água lamacenta congelava ao contato, cristais se
+                            formavam nas botas e paredes de gelo bloqueavam o caminho. O fenômeno estava relacionado à
+                            presença do Gólem, que guardava a câmara.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-target="#p5"
+                            data-bs-toggle="collapse">A garota de asas brilhantes</button></h2>
+                    <div class="accordion-collapse collapse" id="p5">
+                        <div class="accordion-body">Barnabé relatou ter visto soldados vestidos de preto e vermelho
+                            carregando uma garota com asas brilhantes e caixas pesadas de metal rúnico. Eles não usavam
+                            o símbolo de Azgher, mas um brasão de animal negro em escudo vermelho.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-target="#p6"
+                            data-bs-toggle="collapse">O Gólem e seu núcleo</button></h2>
+                    <div class="accordion-collapse collapse" id="p6">
+                        <div class="accordion-body">A passagem congelada estava ligada ao Gólem que ocupava a câmara.
+                            Após derrotá-lo, o gelo cedeu e a rota se abriu. Gahliel identificou o cristal mágico do
+                            constructo.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="py-4 mt-5">
+        <div class="container small">Deuses Esquecidos · Compêndio dos aventureiros · Informações reunidas a partir do
+            que o grupo descobriu.</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
